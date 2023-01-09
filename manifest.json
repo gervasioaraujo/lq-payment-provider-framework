@@ -1,0 +1,59 @@
+{
+  "name": "liquido-vtex-payment-provider-framework",
+  "vendor": "liquidopartnerbr",
+  "version": "1.0.0-beta.0",
+  "title": "Liquido Payments",
+  "description": "Liquido app connector for Vtex Payment Provider Protocol",
+  "builders": {
+    "paymentProvider": "1.x",
+    "node": "6.x",
+    "docs": "0.x"
+  },
+  "policies": [
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "heimdall.vtexpayments.com.br",
+        "path": "/api/payment-provider/callback/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "auth-dev.liquido.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api-qa.liquido.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "authsg.liquido.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.liquido.com",
+        "path": "*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "LiquidoPaymentConnector",
+  "paymentMethods": [
+    {
+      "name": "Visa",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "American Express",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Diners",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Elo",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Hipercard",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Mastercard",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "BankInvoice",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Pix",
+      "allowsSplit": "disabled"
+    }
+  ],
+  "customFields": [
+    {
+      "name": "Client ID",
+      "type": "text"
+    },
+    {
+      "name": "Sandbox Application Key",
+      "type": "text"
+    },
+    {
+      "name": "Sandbox Application Token",
+      "type": "text"
+    },
+    {
+      "name": "Sandbox Client ID",
+      "type": "text"
+    }
+  ]
+}
